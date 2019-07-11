@@ -1,0 +1,39 @@
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOe3P_8PED60lNGcTZDI-qeDZ57qBNblaTjx9gqWUhLFMII-La");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.display-4 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    padding-top: 30px;
+    color: white;
+}
+
+.jumbotron {
+    background: transparent !important;
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+.carousel {
+    height:100%;
+}
+
+.carousel-item{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    width:100%;
+    height:100%;
+}
+
+.obj-text {
+    width:100%;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+}
+

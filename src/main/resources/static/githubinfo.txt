@@ -1,0 +1,4 @@
+GitHub is a software development version control system, based on Git.
+Unlike Git, which is a command line based, GitHub is a tool-kit which allows users to
+do version control and source code management (SCM). It provides access control, bug tracking,
+reature requests, task management and more.
