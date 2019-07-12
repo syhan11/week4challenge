@@ -10,30 +10,16 @@
     <title>Home</title>
 </head>
 <body>
-    <!-- Side navigation -->
-    <!--<div th:fragment="navbar-base">-->
-        <div class="sidenav" id="side-navbar">
-
-            <a href="/index">Home</a>
-            <a href="#">About Bootcamp</a>
-            <a href="#">Authors</a>
-
-
-
-            <p>&copy; 2019 Copyright </p>
-        </div>
-    </div>
-
+<!-- Side navigation -->
+<th:nave_block th:fragment="base_navigator">
     <div th:fragment="navbar-base">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About Bootcamp</a>
-            <a href="#">Authors</a>
-
+            <a href="/index">Home</a>
+            <a href="/bootcamp">About Bootcamp</a>
+            <a href="/authors">Authors</a>
         </div>
     </div>
-
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -46,7 +32,7 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
+</th:nave_block>
 
 
 </body>

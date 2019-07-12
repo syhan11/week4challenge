@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"/>
+
+    <th:block th:replace="/Home :: importBS">...</th:block>
+    <link rel="stylesheet" type="text/css" href="/entry1Decorate.css">
+
+    <title>Entry 1</title>
+</head>
+<body>
+<!--Nav Bar-->
+<th:block th:replace="/Home :: navlinks">...</th:block>
+<!--Sticky Icons-->
+<th:block th:replace="/Home :: importIcons">...</th:block>
+<!--End of sticky icons-->
+
+<!--Contents-->
+<h2 class="IntroText">Java Exception</h2>
+<div class="container">
+    <p class="jumbotron">An exception (or exceptional event) is a problem that arises during the
+        execution of a program. When
+        an Exception occurs the normal flow of the program is disrupted and the program/Application terminates
+        abnormally,
+        which is not recommended, therefore, these exceptions are to be handled.
+    </p>
+</div>
+
+<hr>
+<br>
+<!--carousel-->
+<div class="container">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="https://res.cloudinary.com/dzk3cvgwt/image/upload/c_scale,h_1080,w_1920/v1562863740/exception-hierarchy-in-java_seefed.png"
+                     class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="https://res.cloudinary.com/dzk3cvgwt/image/upload/v1562853432/ExceptionJava_svhsqv.png"
+                     class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+<hr>
+<br>
+
+</body>
+</html>
