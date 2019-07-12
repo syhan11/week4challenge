@@ -61,8 +61,7 @@ public class HomeController {
     }
 
     @RequestMapping("/html")
-    public String html() {
-        return "html";
+    public String html() {return "html";
     }
 
     @RequestMapping("/bootstrap")

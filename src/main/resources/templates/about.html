@@ -2,12 +2,24 @@
 <html lang="en">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../static/frontend_styles.css">
+<link rel="stylesheet" type="text/css" href="frontend_styles.css">
 
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
 </head>
 <body id="aboutbody">
+<div th:fragment="navbar-base">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="#">About Bootcamp</a>
+        <a href="#">Authors</a>
+
+    </div>
+</div>
+
+<span style="font-size:45px;cursor:pointer; padding-left:2rem;color:white; " onclick="openNav()">&#9776;</span>
 <div class="container">
     <div class="row" id="content-row">
         <div class ="col">
@@ -15,3 +27,14 @@
         </div>
     </div>
 </div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+</body>
+</html>
