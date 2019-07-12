@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>GitHub</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style_github.css">
 
-
 </head>
-<body>
+<body style="background-image: http://staging.mitsmr.io/content/uploads/2016/03/TechSavvy-20160331-1200.jpg">
 
-<div th:fragment="navbar-base">
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/">Home</a>
-        <a href="#">About Bootcamp</a>
-        <a href="#">Authors</a>
+<!--- Bootstrap CSS -->
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Italianno|Rum+Raisin&display=swap"
+      rel="stylesheet">
 
-    </div>
+
+<!- Style Sheet from Boot Strap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+<div class="jumbotron">
+    <h1 class="display-4" name="title">Program Design & Algorithm2</h1>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div>
+    <img src="https://ruwix.com/pics/solution/finish-solution-rubiks-cube.jpg" width="100%" height="500px">
 
+</div>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4" name="title">What is a GitHub?</h1>
-    </div>
-
-    <div class="card bg-light mb-3" style="width:100%">
-        <div class="card-header">Overview</div>
-        <div class="card-body" style="font-size: x-large">
-            <object class="obj-text" id="obj"
-                    data="githubinfo.txt" border="0" style="width:100%">
-            </object>
-        </div>
-    </div>
-</div>  <!--- container --->
 
 <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -59,6 +61,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 
 
 <script>
