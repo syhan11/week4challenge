@@ -2,14 +2,19 @@
     /*background-image: url("https://res.cloudinary.com/japes930/image/upload/c_scale,w_1366/v1562865864/beautiful_blog_design-1_xromln.png");*/
     /*height: 100vh;*/
     /*width:100vw;*/
-    background: url("https://res.cloudinary.com/japes930/image/upload/c_scale,w_1366/v1562865864/beautiful_blog_design-1_xromln.png") no-repeat center center fixed;
+    background: url("https://res.cloudinary.com/japes930/image/upload/v1562876212/767286_8bb8_4_bhtph3.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
-
 }
-div{
+#content-row{
+    background-color:white;
+    margin: 10rem 5rem;
+    border-radius: 5px;
+}
 
+#content-row .col{
+    padding:2rem;
 }
