@@ -1,13 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../static/frontend_styles.css">
+
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <title>CSS/Boostrap</title>
 </head>
-<body>
-<div th:insert="~{/base :: navbar-base}"></div>
+<body id="cssbody">
+<div class="container">
+    <div class="row" id="content-row">
+        <div class ="col">
+            <h1>CSS</h1>
+            <hr>
+            <p><b>CSS</b> stands for Cascading Style Sheets. CSS is used to for the design and layout of an html page.
+                Styles are applied to the HTML elements mentioned in the last blog. Just a few examples are color, font style, size, opacity, etc.
+            </p>
+            <div style="border:2px solid black; width:750px; padding-top:1rem; margin-left:3rem;" class="row">
+                 <pre class="code">
+                    &lt;h1&gt;
+                        CSS>Java
+                    &lt;/h1&gt;
+                </pre>
+                <pre class="code">
+                    &lt;style&gt;
+                        h5 { font-size:16pt;
+                             color:red;
+                              border: 5px solid black;
+                        }
+                    &lt;/style&gt;
+                </pre>
 
+
+            </div>
+            <br>
+            <div style="text-align:center">Output: <span style="font-size:16pt; color:red;  border: 1px solid black;">CSS>Java</span></div>
+
+
+
+            <br>
+            <h3>Boostrap</h3>
+            <p>Boostrap is a front-end framework/library. It contains bits of precoded HTML, CSS, and JavaScript.
+                It enables developers to quickly build responsive websites. <b>Bootstrap saves you from writing lots of CSS code!</b></p>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-</html></html>
+</html>

@@ -18,3 +18,9 @@
 #content-row .col{
     padding:2rem;
 }
+
+#cssbody{
+    background: url("https://res.cloudinary.com/japes930/image/upload/v1562876231/965162_d7a5_2_vk1we0.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
