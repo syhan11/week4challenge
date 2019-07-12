@@ -3,11 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
-<div th:insert="~{/base :: navbar-base}"></div>
+<body id="index-body">
+<!--<div th:insert="~{/base :: navbar-base}"></div>-->
+<div th:fragment="navbar-base">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="#">About Bootcamp</a>
+        <a href="#">Authors</a>
 
+    </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <div class="row d-flex justify-content-around">
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562868297/sta-je-html_vc0eg7.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #1</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" style="height:145px" src="https://res.cloudinary.com/japes930/image/upload/v1562874148/bs4_vndate.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS/Bootstrap</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="" class="btn btn-primary">Blog #2</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" style="height:145px" src="https://cacoo.com/wp-app/uploads/2018/10/Cacoo-8-must-see-wireframes-680x450.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Program Design</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #3</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--Second Row-->
+            <div class="row d-flex justify-content-around" id="row2">
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562876007/xnwkyzrdrnczdohfs5va.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Core Java</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #4</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562876007/xnwkyzrdrnczdohfs5va.png">
+                    <div class="card-body">
+                        <h5 class="card-title">More Core Java</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #5</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562876231/965162_d7a5_2_vk1we0.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">More Object-Oriented Java</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #6</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562874604/1681934_d3da_3_uqquc7.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Object-Oriented Java</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #7</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Third Row-->
+            <div class="row d-flex justify-content-around">
+                <div class="card">
+                    <img class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562877455/natural-language-processing-algorithms-fb-1_jodic6.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Algorithms</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #8</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img style="height:140px" class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562877355/2cb670b6ddd8922a1c1b2fee4f6f758c_rcicur.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Github</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #9</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img style="height:140px" class="card-img-top" src="https://res.cloudinary.com/japes930/image/upload/v1562877355/2cb670b6ddd8922a1c1b2fee4f6f758c_rcicur.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">More Github</h5>
+                        <p class="card-text">Lorem  Ipsum</p>
+                        <a href="#" class="btn btn-primary">Blog #10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 </html>

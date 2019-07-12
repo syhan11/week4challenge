@@ -2,25 +2,49 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Home</title>
 </head>
 <body>
     <!-- Side navigation -->
+    <!--<div th:fragment="navbar-base">-->
+        <!--<div class="sidenav" id="side-navbar">-->
+
+            <a href="/index">Home</a>
+            <a href="#">About Bootcamp</a>
+            <a href="#">Authors</a>
+
+
+
+            <p>&copy; 2019 Copyright </p>
+        </div>
+    </div>
+
     <div th:fragment="navbar-base">
-    <div class="sidenav" id="side-navbar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About Bootcamp</a>
+            <a href="#">Authors</a>
 
-        <a href="/index">Home</a>
-        <a href="#">About Bootcamp</a>
-        <a href="#">Authors</a>
-
-
-        <p>&copy; 2019 Copyright </p>
-    </div>
+        </div>
     </div>
 
 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
